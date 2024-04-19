@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Homepage - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+        <script src="js/scripts.js"></script>
+		<script defer src="js/licznik.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Black+Ops+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		
+		
+    </head>
+    <body>
+	
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!"> <img src="assets/logov3.png" alt="logo"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Strona glowna</a></li>
+                        
+						<li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+						<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Oferta</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="komis.html">Komis</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="serwis.html">Serwis</a></li>
+                            </ul>
+                        </li>
+						
+                    </ul>
+						<div>Odwiedzono nas już</div>
+						<div class="website-counter"></div>
+						<div>Razy</div>
+						<button id="reset">Reset</button>
+                    
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="glow display-4 fw-bolder" style="font-size:80px">POLCAR</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">My znamy się na autach</p>
+                </div>
+            </div>
+        </header>
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+  <div class="row">
+    <div class="column-66">
+      <h2 class="large-font" style="color:MediumSeaGreen;"><b>Kim jesteśmy?</b></h2>
+      <p><span style="font-size:20px">Nasza firma powstała w roku 1990 jako mały, rodziny biznes. Z biegiem czasu rozwijaliśmy działalność i poszerzaliśmy swoje zasięgi. W 1999 opuściliśmy nasze "podwórko" i otworzyliśmy pełnoprawny komis w centrum Lublina. Od 2005 sprowadzamy auta z USA, Niemiec i Japonii. Od 2018 przygotowujemy się na poszerzenie zakresu usług o serwis i sprzedaż części. Rozpoczęcie działalności planujemy na rok 2022.</span></p>
+    </div>
+    <div class="column-33">
+        <img src="assets/zdj1.jpg" alt="zdj1" class="respo" style="border: 10px double black;box-shadow: 10px 10px grey;border-radius:50px;background-color:red">
+    </div>
+  </div>
+  <div class="row">
+  <div class="column-66">
+      <h2 class="large-font" style="color:red;"><b>Dlaczego my?</b></h2>
+      <p><span style="font-size:20px">Naszym priorytetem zawsze było, jest i będzie zadowolenie klientów. Dlatego każde nasze auto zostało przed wystawieniem na sprzedaż zbadane i przygotowane do jazdy. Zza oceanu sprowadzamy tylko sprawdzone i bezwypadkowe pojazdy. Sprzedajemy wyłącznie auta posiadające pełną dokumentację.</span> </p>
+    </div>
+    <div class="column-33">
+      <img src="assets/zdj2.jpg" alt="zdj2" class="respo" style="border: 10px double black;box-shadow: 10px 10px grey;border-radius:50px;background-color:mediumseagreen">
+    </div>
+  </div>
+	<h3>Gdzie można nas znaleźć</h3>
+    <div id="map">  </div><br>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+            </div>
+        </section>
+		<!--Pogoda-->
+		<div id="ww_ba1832bc5e1e7" v='1.20' loc='auto' a='{"t":"ticker","lang":"en","ids":[],"cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_sot":"celsius","sl_ics":"one_a","font":"Arial"}'>Weather Data Source: <a href="https://sharpweather.com/" id="ww_ba1832bc5e1e7_u" target="_blank">Sharp Weather</a></div><script async src="https://srv2.weatherwidget.org/js/?id=ww_ba1832bc5e1e7"></script>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Kacper Papiński 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+    </body>
+</html>
